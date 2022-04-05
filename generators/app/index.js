@@ -77,11 +77,6 @@ module.exports = class extends Generator {
       {name: this.props.pluginName, host: this.props.host}
     );
 
-    this.fs.copy(
-      this.templatePath('.gitignore'),
-      this.destinationPath('.gitignore')
-    );
-
     this.fs.copyTpl(
       this.templatePath('template/xs-app.json'),
       this.destinationPath(this.props.pluginName+'/xs-app.json'),
