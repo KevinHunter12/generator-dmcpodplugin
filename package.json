@@ -5,8 +5,8 @@
   "homepage": "",
   "author": {
     "name": "Kevin Hunter",
-    "email": "",
-    "url": ""
+    "email": "kev.hunter@blueyonder.co.uk",
+    "url": "https://github.com/KevinHunter12/generator-dmcpodplugin"
   },
   "files": [
     "generators"
