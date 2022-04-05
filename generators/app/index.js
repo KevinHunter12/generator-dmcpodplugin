@@ -179,7 +179,7 @@ module.exports = class extends Generator {
   }
 
   install() {
-    tthis.installDependencies({
+    this.installDependencies({
       bower: false,
       npm: true
     }).then(() => console.log('Everything is ready!'));
