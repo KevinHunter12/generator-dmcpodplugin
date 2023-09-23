@@ -65,11 +65,11 @@ module.exports = class extends Generator {
       {xsappname: this.props.pluginName}
     );
     
-    this.fs.copyTpl(
+  /*  this.fs.copyTpl(
       this.templatePath('package.json'),
       this.destinationPath('package.json'),
       {name: this.props.pluginName}
-    );
+    );*/
 
     this.fs.copyTpl(
       this.templatePath('mta.yaml'),
@@ -89,11 +89,11 @@ module.exports = class extends Generator {
       {name: this.props.pluginName}
     );
 
-    this.fs.copyTpl(
+    /*this.fs.copyTpl(
       this.templatePath('template/package-lock.json'),
       this.destinationPath(this.props.pluginName+'/package-lock.json'),
       {name: this.props.pluginName}
-    );
+    );*/
 
     this.fs.copyTpl(
       this.templatePath('template/webapp/index.html'),
