@@ -179,6 +179,9 @@ module.exports = class extends Generator {
   }
 
   install() {
+    var npmdir = process.cwd() + '/' +this.props.pluginName;
+    process.chdir(npmdir);
+
     this.npmInstall();
 
     }
