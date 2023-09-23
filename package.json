@@ -1,6 +1,6 @@
 {
   "name": "generator-dmcpodplugin",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "This generator scaffolds a SAP Digital Manufacturing Cloud POD Plugin",
   "homepage": "",
   "author": {
@@ -8,7 +8,7 @@
     "email": "none@none.com",
     "url": "https://github.com/KevinHunter12/generator-dmcpodplugin"
   },
-  "type": "module",
+  
   "files": [
     "generators"
   ],
