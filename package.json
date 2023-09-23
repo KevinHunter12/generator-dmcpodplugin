@@ -8,6 +8,7 @@
     "email": "none@none.com",
     "url": "https://github.com/KevinHunter12/generator-dmcpodplugin"
   },
+  "type": "module",
   "files": [
     "generators"
   ],
@@ -30,7 +31,7 @@
     "jest": "^29.7.0"
   },
   "engines": {
-    "npm": ">= 4.0.0"
+    "npm": ">= 16.0.0"
   },
   "dependencies": {
     "yeoman-generator": "^5.9.0",
