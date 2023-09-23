@@ -8,7 +8,7 @@ module.exports = class extends Generator {
     // Have Yeoman greet the user.
     this.log(
       yosay(
-        `Welcome to the ${chalk.red('SAP Digital Manufacturing Cloud POD Plugin V1.0.10')} generator!`
+        `Welcome to the ${chalk.red('SAP Digital Manufacturing Cloud POD Plugin V1.0.11')} generator!`
       )
     );
 
