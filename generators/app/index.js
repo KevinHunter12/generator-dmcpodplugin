@@ -1,6 +1,6 @@
 'use strict';
 const Generator = require('yeoman-generator');
-const chalk = require('chalk');
+import chalk from 'chalk';
 const yosay = require('yosay');
 
 module.exports = class extends Generator {
@@ -8,7 +8,7 @@ module.exports = class extends Generator {
     // Have Yeoman greet the user.
     this.log(
       yosay(
-        `Welcome to the ${chalk.red('SAP Digital Manufacturing Cloud POD Plugin V1.0.9')} generator!`
+        `Welcome to the ${chalk.red('SAP Digital Manufacturing Cloud POD Plugin V1.0.10')} generator!`
       )
     );
 
