@@ -1,6 +1,6 @@
 {
   "name": "generator-dmcpodplugin",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "This generator scaffolds a SAP Digital Manufacturing Cloud POD Plugin",
   "homepage": "",
   "author": {
@@ -34,7 +34,7 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^4.13.0",
+    "yeoman-generator": "^5.9.0",
     "chalk": "^2.1.0",
     "yosay": "^2.0.2"
   },
