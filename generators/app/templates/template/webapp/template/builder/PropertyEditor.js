@@ -19,27 +19,11 @@ sap.ui.define([
 		addPropertyEditorContent: function(oPropertyFormContainer){
 			var oData = this.getPropertyData();
 			
-			//this.addSwitch(oPropertyFormContainer, "backButtonVisible", oData);
+			this.addSwitch(oPropertyFormContainer, "backButtonVisible", oData);
 			this.addSwitch(oPropertyFormContainer, "closeButtonVisible", oData);
-			
-			
-			
-			//this.addInputField(oPropertyFormContainer, "Text", oData);
-			//this.addInputField(oPropertyFormContainer, "LogoUrl", oData);
+						
 			this.addInputField(oPropertyFormContainer, "title", oData);
-			//this.addInputField(oPropertyFormContainer, "text", oData);
-			//this.addSwitch(oPropertyFormContainer, "border", oData);
-            //this.addSwitch(oPropertyFormContainer, "scroll", oData);
-			//this.addInputField(oPropertyFormContainer, "uid", oData);
-			//this.addInputField(oPropertyFormContainer, "backgroundColor", oData);
-            //this.addInputField(oPropertyFormContainer, "fontColor", oData);
-			//this.addInputField(oPropertyFormContainer, "fontSize", oData);
-			
-			//this.addInputField(oPropertyFormContainer, "Param2Key", oData);
-			//this.addInputField(oPropertyFormContainer, "Param2Value", oData);
-			
-			//this.addInputField(oPropertyFormContainer, "Param3Key", oData);
-			//this.addInputField(oPropertyFormContainer, "Param3Value", oData);
+			this.addInputField(oPropertyFormContainer, "text", oData);
 
             oFormContainer = oPropertyFormContainer;
 		},
@@ -47,8 +31,10 @@ sap.ui.define([
 		getDefaultPropertyData: function(){
 			return {
 				
-				"closeButtonVisible" : false,
-                "title": "template"
+				"backButtonVisible": true,
+				"closeButtonVisible": true,
+                "title": "<%= name %>",
+				"text": "<%= name %>"
                 
 			};
 		}
