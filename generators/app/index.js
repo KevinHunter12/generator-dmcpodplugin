@@ -8,7 +8,7 @@ module.exports = class extends Generator {
     // Have Yeoman greet the user.
     this.log(
       yosay(
-        `Welcome to the ${chalk.red('SAP Digital Manufacturing Cloud POD Plugin V1.0.17')} generator!`
+        `Welcome to the ${chalk.red('SAP Digital Manufacturing Cloud POD Plugin V1.0.18')} generator!`
       )
     );
 
@@ -19,35 +19,67 @@ module.exports = class extends Generator {
         message: 'What is the name of your plugin?',
         default: "testPlugin"
       },
+
       {
-        type: 'input',
-        name: 'host',
-        message: 'What is your DMC host name?',
-        default: "dmc-az-cons-training.test.execution.eu20.dmc.cloud.sap"
+        type: "input",
+        name: "version",
+        message: "Version Number?",
+        default: "0.0.1"
+      },
+
+      {
+        type: "input",
+        name: "host",
+        message: "What is your DMC host name?",
+        default: "yourhost.execution.eu20.dmc.cloud.sap"
       },
       {
-        type: 'input',
-        name: 'namespace',
-        message: 'What is your plugin namespace?',
-        default: "sap.com.plugins"
+        type: "input",
+        name: "namespace",
+        message: "What is your plugin namespace?",
+        default: "company.custom.plugins"
       },
       {
-        type: 'confirm',
-        name: 'workcenter',
-        message: 'Support WORK_CENTER PODS?',
+        type: "confirm",
+        name: "workcenter",
+        message: "Support WORK_CENTER PODS?",
         default: true
       },
       {
-        type: 'confirm',
-        name: 'operation',
-        message: 'Support OPERATION PODS?',
+        type: "confirm",
+        name: "operation",
+        message: "Support OPERATION PODS?",
         default: true
       },
       {
-        type: 'confirm',
-        name: 'order',
-        message: 'Support ORDER PODS?',
+        type: "confirm",
+        name: "order",
+        message: "Support ORDER PODS?",
         default: true
+      },
+      {
+        type: "confirm",
+        name: "custom",
+        message: "Support CUSTOM PODS?",
+        default: true
+      },
+      {
+        type: "confirm",
+        name: "line",
+        message: "Support Line Monitor PODS?",
+        default: true
+      },
+      {
+        type: "confirm",
+        name: "multiple",
+        message: "Allow multiple instances?",
+        default: false
+      },
+      {
+        type: "confirm",
+        name: "PP",
+        message: "Production Process Enabled?",
+        default: false
       }
     ];
 

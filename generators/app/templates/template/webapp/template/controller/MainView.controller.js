@@ -18,7 +18,11 @@ sap.ui.define([
 
         onAfterRendering: function(){
            
+            this.getView().byId("backButton").setVisible(this.getConfiguration().backButtonVisible);
+            this.getView().byId("closeButton").setVisible(this.getConfiguration().closeButtonVisible);
             
+            this.getView().byId("headerTitle").setText(this.getConfiguration().title);
+            this.getView().byId("textPlugin").setText(this.getConfiguration().text); 
 
         },
 
